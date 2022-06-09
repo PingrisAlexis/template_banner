@@ -1,0 +1,98 @@
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<!-- - - - - - Ad Variables - CSS - - - - - -->
+	<style>
+	:root {
+		--ad-width:300px;
+		--ad-height:250px;
+	}
+	</style>
+
+	<!-- - - - - - Ad Size - - - - - -->
+	<meta name="ad.size" content="width=300,height=250">
+	<meta charset="UTF-8">
+
+	<!-- - - - - - Title/Meta - - - - - -->
+	<title>Nom du Client</title>
+
+	<!-- - - - - - StyleSheet - - - - - -->
+	<link rel="stylesheet" href="./assets/css/style.css">
+
+	<!-- - - - - - Gsap (3.0.2) | CDN - - - - - -->
+	<script src="https://s0.2mdn.net/ads/studio/cached_libs/gsap_3.1.0_min.js"></script>
+
+	<!-- - - - - - JS | Base - - - - - -->
+	<script src="./assets/js/base.js"></script>
+
+	<!-- - - - - - JS | Custom JS - - - - - -->
+	<script src="./assets/js/custom.js"></script>
+
+	<!-- - - - - - JS | Click Tag - - - - - -->
+	<script>
+		var clickTag = "https://www.google.ca/";
+	</script>
+</head>
+<body onload="onDomLoad()" >
+
+	<!-- - - - - - Ad Container - - - - - -->
+	<div id="ad-container">
+
+		<!-- Content Banner -->
+		<div class="content-banner">
+			
+			<!-- Start Coding Here -->
+			
+				<!-- Logo IGA SVG  -->
+				<div class="logo-container">
+					<img class="logo"  src="assets/img/iga-logo.svg"  alt="Logo IGA">
+				</div>
+
+				<!-- Wood Table SVG -->
+				<div class="wood-table-container" >
+					<img  src="assets/img/wood-table.svg"  alt="Table">
+				</div>
+
+				<!-- Atypique Can SVG -->
+				<div class="atypique-can-container">
+					<img  src="assets/img/atypique-can.svg"  alt="Atypique Can ">
+				</div>
+
+				<!-- Exclusive Bubble SVG -->
+				<div class="exclusive-bubble-container">
+					<img  src="assets/img/exclusive-bubble.svg" alt="Exclusive Bubble">
+				</div>
+
+				<!-- White Balloon SVG -->
+				<div class="white-balloon-container">
+					<img  src="assets/img/white-balloon.svg" alt="White Balloon">
+				</div>
+
+				<!-- Red Balloon SVG -->
+				<div class="red-balloon-container">
+					<img  src="assets/img/red-balloon.svg" alt="Red Balloon">
+				</div>
+
+				<!-- CTA Discover  SVG -->
+				<div class="cta-discover-container">
+					<img  src="assets/img/discover-cta.svg"  alt="Discover Them button">
+				</div>
+
+			<!-- End Coding Here -->
+			
+		</div>
+
+
+		<!-- Btn Replay -->
+		<a class="btn--replay" onclick="replayTimeline()">
+			<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="undo-alt" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-undo-alt fa-w-16 fa-7x"><path fill="currentColor" d="M255.545 8c-66.269.119-126.438 26.233-170.86 68.685L48.971 40.971C33.851 25.851 8 36.559 8 57.941V192c0 13.255 10.745 24 24 24h134.059c21.382 0 32.09-25.851 16.971-40.971l-41.75-41.75c30.864-28.899 70.801-44.907 113.23-45.273 92.398-.798 170.283 73.977 169.484 169.442C423.236 348.009 349.816 424 256 424c-41.127 0-79.997-14.678-110.63-41.556-4.743-4.161-11.906-3.908-16.368.553L89.34 422.659c-4.872 4.872-4.631 12.815.482 17.433C133.798 479.813 192.074 504 256 504c136.966 0 247.999-111.033 248-247.998C504.001 119.193 392.354 7.755 255.545 8z"></path></svg>
+		</a>
+
+		<!-- HitZone - ClickTag -->
+		<a id="hitzone" href="javascript:void(0);" onclick="javascript:window.open(window.clickTag)"></a>
+
+	</div>
+	
+</body>
+</html>

@@ -1,0 +1,242 @@
+/* ***** References *****
+Css3 Generator : https://css3generator.com
+SVGOmg : https://jakearchibald.github.io/svgomg
+Tiny png : https://tinypng.com
+*/
+
+/* ***** Reset ***** */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video{ margin: 0; padding: 0; border: 0; vertical-align: baseline; }
+/****** HTML5 POUR LES VIEUX BROWSERS *****/
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section{  display: block; }
+body{ line-height: 1; }
+ol, ul{ list-style: none; }
+blockquote, q{ quotes: none; }
+blockquote:before, blockquote:after,
+q:before, q:after{ content: ''; content: none; }
+table{  border-collapse: collapse; border-spacing: 0; }
+/* ***** END Reset ***** */
+
+/* ***** Main Variables ***** */
+:root{
+	--color-1:#e41c23; /* Main Color Variable */
+	--color-2:green; /* Second Color Variable */
+	--color-white:#fff; /* White Color Variable */
+	--color-black:#000; /* Black Color Variable */
+	--ad-bg:#00324d; /* Banner Background */
+	--ad-color:#fff; /* Base Text Color */
+	--border-color:#7f7f7f; /* Ad Border Color */
+}
+/* Example How to Use Variables : var(--color-1) */
+
+
+/* ***** Base Global Styling ***** */
+*{
+	box-sizing:border-box;
+}
+
+img{
+	width:100%;
+	height:auto;
+}
+
+/* ***** Import fonts ***** */
+@font-face {
+	font-family: 'Bemio_IGA-Italic';
+	src: url("../Fonts/Bemio TYPO IGA FINAL_CC/Bemio_IGA-Italic.otf") format("opentype");
+}
+
+@font-face {
+	font-family: 'Bemio_IGA';
+	src: url("../Fonts/Bemio TYPO IGA FINAL_CC/Bemio_IGA-Regular.otf") format("opentype");
+}
+
+@font-face {
+	font-family: 'GTEestiProDisplay-Regular';
+	src: url("../Fonts/GT Eesti Pro Display/GTEestiProDisplay-Regular.otf") format("opentype");
+}
+
+@font-face {
+	font-family: 'GTEestiProDisplay-Medium';
+	src: url("../Fonts/GT Eesti Pro Display/GTEestiProDisplay-Medium.otf") format("opentype");
+}
+
+h1 {
+	font-family:'GTEestiProDisplay-Regular', Arial, sans-serif;
+
+}
+
+/* ***** Ad Container ***** */
+#ad-container{
+	position:relative;
+    display:block;
+    overflow:hidden;
+    margin:auto;
+    width:var(--ad-width);
+    height:var(--ad-height);
+    max-width:var(--ad-width);
+    max-height:var(--ad-height);
+    box-sizing:border-box;
+	background-color:var(--ad-bg);
+	color:var(--ad-color);
+
+}
+
+/* ***** Banner Border ***** */
+#ad-container:after{
+	content:" ";
+	position:absolute;
+	left:0;
+	top:0;
+	width: calc(100% - 2px);
+	height: calc(100% - 2px);
+	border: solid 1px var(--border-color);
+	pointer-events: none !important;
+	z-index:999;
+}
+
+/* ***** Content Banner ***** */
+.content-banner{
+	position:relative;
+	left:0;
+	top:0;
+	width:100%;
+	height:100%;
+	opacity:0;
+	background: left 41.5% top 70% url("../img/background.svg");
+}
+
+/* ***** Start Coding here ***** */
+.logo-container{
+	position:absolute;
+	left:72%;
+	top:82%;
+	width: 70px;
+	z-index: 3;
+}
+
+.wood-table-container {
+	position:absolute;
+	top:64%;
+	right: 0;
+	width: 3000px !important;
+	z-index:2;
+}
+
+.atypique-can-container {
+	position:absolute;
+	top: 40%;
+	left: 30%;
+	width: 90px;
+	z-index: 2;
+
+}
+
+.exclusive-bubble-container {
+	position: absolute;
+	top: 50%;
+	left: 7%;
+	z-index: 2;
+	width: 100px;
+}
+
+.exclusive-bubble-container {
+	filter: invert(100%);
+}
+
+.white-balloon-container {
+	position: absolute;
+	top: 13%;
+	left: 53%;
+	width: 120px;
+	z-index: 1;
+}
+
+.red-balloon-container {
+	position: absolute;
+	top: -10%;
+	left: 10%;
+	width: 150px;
+}
+
+/* ***** End Coding here ***** */
+
+/* ***** CTA ***** */
+.cta-discover-container{
+	position:absolute;
+	z-index:9;
+	left:23%;
+	top: 86%;
+	display:inline-block;
+	background:var(--color-white);
+	-webkit-border-radius:40px; border-radius:40px;
+	-moz-transform: translateX(-50%); -webkit-transform: translateX(-50%); -o-transform: translateX(-50%); -ms-transform: translateX(-50%); transform: translateX(-50%);
+	-webkit-transition: border 0.3s ease, background 0.3s ease, color 0.3s ease; -moz-transition: border 0.3s ease, background 0.3s ease, color 0.3s ease; -ms-transition: border 0.3s ease, background 0.3s ease, color 0.3s ease; -o-transition: border 0.3s ease, background 0.3s ease, color 0.3s ease; transition: border 0.3s ease, background 0.3s ease, color 0.3s ease;
+}
+
+
+#ad-container:hover .cta-discover-container{
+	background:transparent;
+}
+
+#ad-container:hover .cta-discover-container {
+	fill:var(--color-white);
+}
+
+/* ***** Button Replay ***** */
+.btn--replay{
+	position: absolute;
+	z-index:999999;
+	top:0px;
+	left:0px;
+	width:30px;
+	height:30px;
+	line-height:0;
+	opacity:0;
+	pointer-events: none;
+	cursor: pointer;
+}
+
+.btn--replay svg{
+	position:absolute;
+	left:15%;
+	top:15%;
+	width:35%;
+	height:35%;
+	fill:#000;
+	-webkit-transition: all 0.4s cubic-bezier(.4,0,.2,1); -moz-transition: all 0.4s cubic-bezier(.4,0,.2,1); -ms-transition: all 0.4s cubic-bezier(.4,0,.2,1); -o-transition: all 0.4s cubic-bezier(.4,0,.2,1); transition: all 0.4s cubic-bezier(.4,0,.2,1);
+}
+
+.btn--replay:hover svg{
+	-moz-transform: rotate(-270deg); -webkit-transform: rotate(-270deg); -o-transform: rotate(-270deg); -ms-transform: rotate(-270deg); transform: rotate(-270deg);
+}
+
+
+/* ***** HitZone ClickTag ***** */
+#hitzone{
+	position:absolute;
+	left:0;
+	top:0;
+	width:100%;
+	height:100%;
+	z-index:99999;
+	cursor:pointer;
+}
+
+/* ***** Timeline Finished ***** */
+.timeline-finished .btn--replay{
+	opacity:1;
+	pointer-events: all;
+}
